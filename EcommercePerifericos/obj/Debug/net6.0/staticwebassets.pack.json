@@ -1,0 +1,453 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EcommercePerifericos.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EcommercePerifericos.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular1.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular1.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular10.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular10.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular2.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular2.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular3.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular3.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular4.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular4.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular5.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular5.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular6.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular6.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular7.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular7.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular8.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular8.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\auricular9.jpg",
+      "PackagePath": "staticwebassets\\assets\\auricular9.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\banner1.png",
+      "PackagePath": "staticwebassets\\assets\\banner1.png"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor1.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor1.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor10.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor10.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor2.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor2.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor3.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor3.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor4.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor4.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor5.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor5.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor6.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor6.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor7.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor7.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor8.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor8.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\monitor9.jpg",
+      "PackagePath": "staticwebassets\\assets\\monitor9.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse1.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse1.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse10.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse10.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse2.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse2.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse3.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse3.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse4.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse4.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse5.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse5.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse6.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse6.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse7.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse7.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse8.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse8.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\mouse9.jpg",
+      "PackagePath": "staticwebassets\\assets\\mouse9.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\pad1.jpg",
+      "PackagePath": "staticwebassets\\assets\\pad1.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\pad2.jpg",
+      "PackagePath": "staticwebassets\\assets\\pad2.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\pad3.jpg",
+      "PackagePath": "staticwebassets\\assets\\pad3.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\pad4.jpg",
+      "PackagePath": "staticwebassets\\assets\\pad4.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\pad5.jpg",
+      "PackagePath": "staticwebassets\\assets\\pad5.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado1.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado1.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado10.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado10.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado2.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado2.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado3.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado3.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado4.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado4.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado5.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado5.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado6.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado6.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado7.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado7.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado8.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado8.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\assets\\teclado9.jpg",
+      "PackagePath": "staticwebassets\\assets\\teclado9.jpg"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\js\\BackProduct.js",
+      "PackagePath": "staticwebassets\\js\\BackProduct.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EcommercePerifericos.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.EcommercePerifericos.props",
+      "PackagePath": "build\\EcommercePerifericos.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.EcommercePerifericos.props",
+      "PackagePath": "buildMultiTargeting\\EcommercePerifericos.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.EcommercePerifericos.props",
+      "PackagePath": "buildTransitive\\EcommercePerifericos.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

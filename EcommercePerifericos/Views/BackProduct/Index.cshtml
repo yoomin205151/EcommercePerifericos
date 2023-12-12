@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "ProductBackOffice Page";
+}
+
+<style>
+    #tabla {
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>
+<div class="card" style="margin-top:18px">
+    <div class="card-header">
+        <i class="fas fa-users me-1"></i>Lista De Productos
+    </div>
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#FormModal">Crear Nuevo</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <table id="tabla" class="display cell-border" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Stock</th>
+                    <th>Categoria</th>
+                    <th>Precio</th>
+                    <th>Estado</th>
+                    <th></th>
+                    <th style="display:none">IdCat</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal Crear -->
+<div class="modal fade" id="FormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body g-2">
+                <input type="hidden" id="txtid" name="Id" value="0" />
+                <form id="usuarioForm" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="txtnombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="txtnombre" name="Nombre">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="txtstock" class="form-label">Stock</label>
+                            <input type="number" class="form-control" id="txtstock" name="Stock">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="txtprecio" class="form-label">Precio</label>
+                            <input type="number" class="form-control" id="txtprecio" name="Precio">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="txtcategoria" class="form-label">Categoria</label>
+                            <select class="form-select" aria-label="Default select example" id="txtcategoria" name="IdCategoria">
+                                <option selected>Elija una categoría</option>
+                                @foreach (var categoria in ViewBag.Categorias)
+                                {
+                                    <option value="@categoria.Id">@categoria.Nombre</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="txtimg" class="form-label">Imagen</label>
+                            <input class="form-control" type="file" id="txtimg" name="ImagenFile"> <!-- Actualizamos el nombre del input file -->
+                            <img id="previewImg" src="" width="135" height="100">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="btnGuardarCambios" type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Borrar Producto -->
+<div class="modal fade" id="confirmarEliminarModal" tabindex="-1" aria-labelledby="confirmarEliminarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmarEliminarModalLabel">Confirmar Eliminación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Estás seguro de que deseas eliminar este producto?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" id="btnConfirmarEliminar">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Toast -->
+<div id="toastContainer" style="position: fixed; top: 16px; right: 16px; z-index: 9999;"></div>
+
+@section scripts {
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="~/js/BackProduct.js" asp-append-version="true"></script>
+}
+
