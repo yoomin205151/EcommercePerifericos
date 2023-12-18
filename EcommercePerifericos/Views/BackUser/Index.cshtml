@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "ProductBackOffice Page";
+    ViewData["Title"] = "UserBackOffice Page";
 }
 
 <style>
@@ -10,7 +10,7 @@
 </style>
 <div class="card" style="margin-top:18px">
     <div class="card-header">
-        <i class="fas fa-users me-1"></i>Lista De Productos
+        <i class="fas fa-users me-1"></i>Lista De Usuarios
     </div>
 
     <div class="card-body">
@@ -26,16 +26,13 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Imagen</th>
                     <th>Nombre</th>
-                    <th>Detalle</th>
-                    <th>Stock</th>
-                    <th>Categoria</th>
-                    <th>Precio</th>
-                    <th>Precio_Oferta</th>
-                    <th>Estado</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Contraseña</th>
+                    <th>Rol</th>
                     <th></th>
-                    <th style="display:none">IdCat</th>
+                    <th style="display:none">IdRol</th>
                 </tr>
             </thead>
             <tbody>
@@ -59,41 +56,33 @@
                         <div class="col-sm-6">
                             <label for="txtnombre" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="txtnombre" name="Nombre">
+                            <span id="nombreError" class="text-danger"></span>
                         </div>
                         <div class="col-sm-6">
-                            <label for="txtstock" class="form-label">Stock</label>
-                            <input type="number" class="form-control" id="txtstock" name="Stock">
+                            <label for="txtapellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="txtapellido" name="Apellido">
                         </div>
                         <div class="col-sm-6">
-                            <label for="txtprecio" class="form-label">Precio</label>
-                            <input type="number" class="form-control" id="txtprecio" name="Precio">
+                            <label for="txtemail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="txtemail" name="Email">
                         </div>
                         <div class="col-sm-6">
-                            <label for="txtprecio_oferta" class="form-label">Precio Oferta</label>
-                            <input type="number" class="form-control" id="txtprecio_oferta" name="PrecioOferta">
+                            <label for="txtcontrasenia" class="form-label">Contraseña</label>
+                            <input type="text" class="form-control" id="txtcontrasenia" name="Contrasenia">
                         </div>
                         <div class="col-sm-6">
-                            <label for="txtdetalle" class="form-label">Detalle</label>
-                            <input type="text" class="form-control" id="txtdetalle" name="Detalle">
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="txtcategoria" class="form-label">Categoria</label>
-                            <select class="form-select" aria-label="Default select example" id="txtcategoria" name="IdCategoria">
+                            <label for="txtcategoria" class="form-label">Rol</label>
+                            <select class="form-select" aria-label="Default select example" id="txtrol" name="IdRol">
                                 <option selected>Elija una categoría</option>
-                                @foreach (var categoria in ViewBag.Categorias)
+                                @foreach (var rol in ViewBag.Roles)
                                 {
-                                    <option value="@categoria.Id">@categoria.Nombre</option>
+                                    <option value="@rol.Id">@rol.Tipo</option>
                                 }
                             </select>
                         </div>
-                        <div class="col-sm-12">
-                            <label for="txtimg" class="form-label">Imagen</label>
-                            <input class="form-control" type="file" id="txtimg" name="ImagenFile"> <!-- Actualizamos el nombre del input file -->
-                            <img id="previewImg" src="" width="135" height="100">
-                        </div>
                     </div>
                     <div class="modal-footer">
-                        <button id="btnCerrarModal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <button id="btnGuardarCambios" type="submit" class="btn btn-primary">Guardar Cambios</button>
                     </div>
                 </form>
@@ -103,7 +92,7 @@
 </div>
 
 
-<!-- Modal Borrar Producto -->
+<!-- Modal Borrar Usuario -->
 <div class="modal fade" id="confirmarEliminarModal" tabindex="-1" aria-labelledby="confirmarEliminarModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -112,7 +101,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ¿Estás seguro de que deseas eliminar este producto?
+                ¿Estás seguro de que deseas eliminar este usuario?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -128,6 +117,5 @@
 @section scripts {
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
-    <script src="~/js/BackProduct.js" asp-append-version="true"></script>
+    <script src="~/js/BackUser.js" asp-append-version="true"></script>
 }
-

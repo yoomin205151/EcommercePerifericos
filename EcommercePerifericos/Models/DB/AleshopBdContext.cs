@@ -97,15 +97,18 @@ public partial class AleshopBdContext : DbContext
                 .HasMaxLength(15)
                 .IsUnicode(false)
                 .HasColumnName("activo");
+            entity.Property(e => e.Detalle)
+                .IsUnicode(false)
+                .HasColumnName("detalle");
             entity.Property(e => e.IdCategoria).HasColumnName("id_categoria");
             entity.Property(e => e.Img)
                 .IsUnicode(false)
                 .HasColumnName("img");
             entity.Property(e => e.Nombre)
-                .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("nombre");
             entity.Property(e => e.Precio).HasColumnName("precio");
+            entity.Property(e => e.PrecioOferta).HasColumnName("precio_oferta");
             entity.Property(e => e.Stock).HasColumnName("stock");
 
             entity.HasOne(d => d.IdCategoriaNavigation).WithMany(p => p.Productos)
@@ -157,10 +160,22 @@ public partial class AleshopBdContext : DbContext
             entity.ToTable("venta");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CodigoPostal)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("codigo_postal");
+            entity.Property(e => e.Direccion)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("direccion");
             entity.Property(e => e.Fecha)
                 .HasColumnType("datetime")
                 .HasColumnName("fecha");
             entity.Property(e => e.IdOrigen).HasColumnName("id_origen");
+            entity.Property(e => e.NombreCliente)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("nombre_cliente");
             entity.Property(e => e.Total).HasColumnName("total");
 
             entity.HasOne(d => d.IdOrigenNavigation).WithMany(p => p.Venta)

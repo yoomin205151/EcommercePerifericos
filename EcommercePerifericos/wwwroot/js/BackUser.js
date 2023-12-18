@@ -5,33 +5,22 @@ $(function ($) {
     function abrirModal(json) {
         $("#txtid").val(0);
         $("#txtnombre").val("");
-        $("#txtdetalle").val("");
-        $("#txtprecio").val("");
-        $("#txtstock").val("");
-        $("#txtimg").val("");
-        $("#txtcategoria").val("");
-        $("#txtprecio_oferta").val("");
+        $("#txtapellido").val("");
+        $("#txtemail").val("");
+        $("#txtcontrasenia").val("");
+        $("#txtrol").val("");
 
         if (json !== null) {
             $("#txtid").val(json.id);
             $("#txtnombre").val(json.nombre);
-            $("#txtdetalle").val(json.detalle);
-            $("#txtprecio").val(json.precio);
-            $("#txtstock").val(json.stock);
-            $("#txtcategoria").val(json.idCategoria);
-            $("#txtprecio_oferta").val(json.precioOferta);
-
-            if (json.img !== null && json.img !== '') {
-                var imgSrc = 'data:image/png;base64,' + json.img;
-                $("#previewImg").attr("src", imgSrc);
-            } else {
-                $("#previewImg").attr("src", ""); 
-            }
-
+            $("#txtapellido").val(json.apellido);
+            $("#txtemail").val(json.email);
+            $("#txtcontrasenia").val(json.contrasenia);
+            $("#txtrol").val(json.idRol);
         }
 
         $("#FormModal").modal("show");
-
+        console.log("Valor de #txtid:", $("#txtid").val());
     }
 
     /*evento cuando se le da al boton crear*/
@@ -44,31 +33,18 @@ $(function ($) {
         responsive: true,
         ordering: false,
         ajax: {
-            url: '/BackProduct/ProductList',
+            url: '/BackUser/UserList',
             type: 'GET',
             dataType: 'json',
             dataSrc: 'data'
         },
         columns: [
-            { data: 'id' },
-            {
-                data: 'img',
-                render: function (data) {
-                    if (data !== null && data !== '') {
-                        return '<img src="data:image/png;base64,' + data + '" width="135" height="100" />';
-                    } else {
-                        return '';
-                    }
-                },
-                defaultContent: ''
-            },
+            { data: 'id' },           
             { data: 'nombre' },
-            { data: 'detalle' },
-            { data: 'stock' },
-            { data: 'categoria' },
-            { data: 'precio' },
-            { data: 'precioOferta' },
-            { data: 'activo' },
+            { data: 'apellido' },
+            { data: 'email' },
+            { data: 'contrasenia' },
+            { data: 'rol' },
             {
                 defaultContent: '<div style="display: flex;">' +
                     '<button type="button" class="btn btn-primary btn-sm btn-editar"><i class="bi bi-pencil"></i></button>' +
@@ -78,7 +54,7 @@ $(function ($) {
                 searchable: false,
                 width: "60px"
             },
-            { data: 'idCategoria', visible: false }
+            { data: 'idRol', visible: false }
         ],
         language: {
             url: '//cdn.datatables.net/plug-ins/1.13.7/i18n/es-ES.json'
@@ -122,64 +98,52 @@ $(function ($) {
         });
     }
 
-    // Evento de clic para cambiar el estado "activo" de un producto
-    $("#tabla tbody").on("click", "td:nth-child(9)", function () {
-        var filaSeleccionada = $(this).closest("tr");
-        var data = tabla.row(filaSeleccionada).data();
-        var idProducto = data.id;
-        var estadoActual = data.activo;
-
-        var nuevoEstado = estadoActual === "activo" ? "inactivo" : "activo";
-
-        $.post("/BackProduct/CambiarEstadoProducto", { id: idProducto, nuevoEstado: nuevoEstado })
-            .done(function (response) {
-                showToast("Estado del producto cambiado exitosamente.", "success");
-                data.activo = nuevoEstado;
-                tabla.row(filaSeleccionada).data(data).draw(); // Actualizar el estado en la tabla
-            })
-            .fail(function (error) {
-                showToast("Ha ocurrido un error al cambiar el estado del producto.", "error");
-                console.error(error);
-            });
-    });
-
     /*Evento Crear y Modificar Producto*/
     $(document).on("click", "#btnGuardarCambios", function () {
         var formData = new FormData($("#usuarioForm")[0]);
 
         if ($("#txtid").val() == 0) {
             $.ajax({
-                url: "/BackProduct/CrearProducto",
+                url: "/BackUser/CrearUsuario",
                 type: "POST",
                 data: formData,
                 processData: false,
                 contentType: false,
                 success: function (response) {
-                    showToast("Producto creado exitosamente.", "success");
-                    tabla.ajax.reload();
-                    $("#FormModal").modal("hide");
+                    if (validar()) {
+                        showToast("Usuario creado exitosamente.", "success");
+                        tabla.ajax.reload();
+                        $("#FormModal").modal("hide");
+                    } else {
+                        // Mostrar mensajes de alerta
+                        showToast(response.message, "error");
+                    }
                 },
                 error: function (error) {
-                    showToast("Ha ocurrido un error al crear el producto.", "error");
+                    showToast("Ha ocurrido un error al crear usuario.", "error");
                     console.error(error);
                 }
             });
         } else {
             formData.append("id", $("#txtid").val());
             $.ajax({
-                url: "/BackProduct/ModificarProducto",
+                url: "/BackUser/ModificarUsuario",
                 type: "POST",
                 data: formData,
                 processData: false,
                 contentType: false,
                 success: function (response) {
-                    showToast("Producto modificado exitosamente.", "success");
-                    tabla.ajax.reload();
-                    $("#FormModal").modal("hide");
-                    console.log(response);
+                    if (validar()) {
+                        showToast("Usuario modificado exitosamente.", "success");
+                        tabla.ajax.reload();
+                        $("#FormModal").modal("hide");
+                    } else {
+                        // Mostrar mensajes de alerta
+                        showToast(response.message, "error");
+                    }
                 },
                 error: function (error) {
-                    showToast("Ha ocurrido un error al modificar el producto.", "error");
+                    showToast("Ha ocurrido un error al modificar el usuario.", "error");
                     console.error(error);
                 }
             });
@@ -188,8 +152,22 @@ $(function ($) {
 
     // Evento de envío del formulario de creación/edición
     $(document).on("submit", "#usuarioForm", function (event) {
-        event.preventDefault();
+        event.preventDefault();      
     });
+
+    function validar() {
+        var nombre = $("#txtnombre").val();
+        var isValid = nombre.length >= 4 && nombre.length <= 20;
+
+        // Actualiza el mensaje de error y el estilo
+        if (isValid) {
+            $("#nombreError").text("").hide();
+        } else {
+            $("#nombreError").text("El nombre debe tener entre 4 y 20 caracteres.").show();
+        }
+
+        return isValid;
+    }
 
     // Reiniciar campos al cerrar el modal
     $("#FormModal").on("hidden.bs.modal", function () {
@@ -197,12 +175,11 @@ $(function ($) {
         $("#previewImg").attr("src", ""); // Restablecer el atributo src de la imagen a vacío
     });
 
-
     // Evento de clic para el botón de eliminar
     $("#tabla tbody").on("click", ".btn-eliminar", function () {
         var filaSeleccionada = $(this).closest("tr");
         var data = tabla.row(filaSeleccionada).data();
-        var idProducto = data.id;
+        var idUsuario = data.id;
 
         // Al hacer clic en el botón de eliminar, abrimos el modal de confirmación
         $("#confirmarEliminarModal").modal("show");
@@ -210,13 +187,13 @@ $(function ($) {
         // Configuramos el evento de clic para el botón "Confirmar" del modal
         $("#btnConfirmarEliminar").on("click", function () {
             // Hacer la solicitud de eliminación al servidor
-            $.post("/BackProduct/EliminarProducto", { id: idProducto })
+            $.post("/BackUser/EliminarUsuario", { id: idUsuario })
                 .done(function (response) {
-                    showToast("Producto eliminado exitosamente.", "success");
+                    showToast("Usuario eliminado exitosamente.", "success");
                     tabla.row(filaSeleccionada).remove().draw(); // Eliminar la fila de la tabla
                 })
                 .fail(function (error) {
-                    showToast("Ha ocurrido un error al eliminar el producto.", "error");
+                    showToast("Ha ocurrido un error al eliminar el usuario.", "error");
                     console.error(error);
                 });
 

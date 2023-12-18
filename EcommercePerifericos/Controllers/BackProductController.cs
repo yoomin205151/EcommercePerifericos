@@ -6,6 +6,7 @@ using System.Diagnostics;
 
 namespace EcommercePerifericos.Controllers
 {
+    [Authorize]
     public class BackProductController : Controller
     {
         private Models.DB.AleshopBdContext dbContext;
@@ -21,7 +22,7 @@ namespace EcommercePerifericos.Controllers
             return View(model);
         }
 
-        public JsonResult ProductList(int categoriaId = 0)
+        public async Task<IActionResult> ProductList(int categoriaId = 0)
         {
             List<Producto> productos;
 
@@ -30,17 +31,17 @@ namespace EcommercePerifericos.Controllers
                 if (categoriaId > 0)
                 {
                     // Filtrar los productos por categoría con carga ansiosa
-                    productos = dbContext.Productos
+                    productos = await dbContext.Productos
                         .Include(p => p.IdCategoriaNavigation)
                         .Where(p => p.IdCategoria == categoriaId)
-                        .ToList();
+                        .ToListAsync();
                 }
                 else
                 {
                     // Obtener todos los productos con carga ansiosa
-                    productos = dbContext.Productos
+                    productos = await dbContext.Productos
                         .Include(p => p.IdCategoriaNavigation)
-                        .ToList();
+                        .ToListAsync();
                 }
 
                 var productosDTO = productos.Select(p => new
@@ -52,7 +53,9 @@ namespace EcommercePerifericos.Controllers
                     categoria = p.IdCategoriaNavigation?.Nombre ?? "Sin categoría",
                     p.IdCategoria,
                     p.Precio,
-                    p.Activo
+                    p.Activo,
+                    p.Detalle,
+                    PrecioOferta = p.PrecioOferta.HasValue ? p.PrecioOferta.Value.ToString() : "Sin Oferta"
                 });
 
                 return Json(new { data = productosDTO });
@@ -171,6 +174,8 @@ namespace EcommercePerifericos.Controllers
                         productoExistente.Stock = productoModificado.Stock;
                         productoExistente.Precio = productoModificado.Precio;
                         productoExistente.IdCategoria = productoModificado.IdCategoria;
+                        productoExistente.Detalle = productoModificado.Detalle;
+                        productoExistente.PrecioOferta = productoModificado.PrecioOferta;
 
                         Console.WriteLine("Producto Modificado:");
                         Console.WriteLine(productoModificado);

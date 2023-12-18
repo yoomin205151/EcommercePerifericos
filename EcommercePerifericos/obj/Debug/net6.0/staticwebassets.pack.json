@@ -201,6 +201,18 @@
       "PackagePath": "staticwebassets\\js\\BackProduct.js"
     },
     {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\js\\BackUser.js",
+      "PackagePath": "staticwebassets\\js\\BackUser.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\js\\Product.js",
+      "PackagePath": "staticwebassets\\js\\Product.js"
+    },
+    {
+      "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\js\\ProductDetail.js",
+      "PackagePath": "staticwebassets\\js\\ProductDetail.js"
+    },
+    {
       "Id": "D:\\proyectos\\EcommercePerifericos\\EcommercePerifericos\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

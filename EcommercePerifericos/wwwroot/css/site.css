@@ -68,10 +68,10 @@ footer {
     color: darkorange !important;
 }
 
+.textHeader {
+    color: darkorange;
+}
 /*footer style*/
-
-
-
 .footer-copy {
     background-color: rgba(0, 0, 0, 0.2);
 }

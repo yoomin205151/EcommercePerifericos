@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <div class="bg-dark d-flex justify-content-center">
-            <p class="text-white mb-0">DSADSADSADSADSADASDSADSADSADSADSADSADASDASDSA</p>
+        <div class="bg-light d-flex justify-content-center">
+            <p class="textHeader mb-0"><b>Merry Christmas 40% OFF</b></p>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
             <div class="container-fluid">
@@ -23,7 +23,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PRODUCTOS</a>
+                            <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index">PRODUCTOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">FAQ</a>
@@ -56,7 +56,7 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a class="dropdown-item text-white" asp-area="" asp-controller="BackProduct" asp-action="Index">PRODUCTOS</a></li>
-                                    <li><a class="dropdown-item text-white" href="#">USUARIOS</a></li>
+                                    <li><a class="dropdown-item text-white" asp-area="" asp-controller="BackUser" asp-action="Index">USUARIOS</a></li>
                                     <li><a class="dropdown-item text-white" asp-area="" asp-controller="Session" asp-action="Logout">CERRAR SESION</a></li>
                                 </ul>
                             </li>

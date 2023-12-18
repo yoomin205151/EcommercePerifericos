@@ -85,3 +85,4 @@ D:\proyectos\EcommercePerifericos\EcommercePerifericos\obj\Debug\net6.0\refint\E
 D:\proyectos\EcommercePerifericos\EcommercePerifericos\obj\Debug\net6.0\EcommercePerifericos.pdb
 D:\proyectos\EcommercePerifericos\EcommercePerifericos\obj\Debug\net6.0\EcommercePerifericos.genruntimeconfig.cache
 D:\proyectos\EcommercePerifericos\EcommercePerifericos\obj\Debug\net6.0\ref\EcommercePerifericos.dll
+D:\proyectos\EcommercePerifericos\EcommercePerifericos\obj\Debug\net6.0\EcommercePerifericos.sourcelink.json
