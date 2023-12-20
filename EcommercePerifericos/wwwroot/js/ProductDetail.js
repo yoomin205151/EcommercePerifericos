@@ -31,7 +31,7 @@
                 // Verificar si la respuesta contiene datos y si la propiedad success es verdadera
                 if (response.success && response.data) {
                     // Actualizar los elementos HTML con la información del producto
-                    actualizarInterfazUsuario(response.data);
+                    actualizarProductCard(response.data);
                 } else {
                     console.error('No se recibieron datos válidos del servidor.');
                 }
@@ -42,7 +42,7 @@
         });
     }
 
-    function actualizarInterfazUsuario(producto) {
+    function actualizarProductCard(producto) {
         // Actualizar elementos HTML con la información del producto
         $('.title').html(producto.nombre);
         $('.text-muted').html('<i class="bi bi-bag-check"></i>' + producto.stock);
